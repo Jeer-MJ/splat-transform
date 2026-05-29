@@ -93,4 +93,27 @@ const cli = {
     cache: false
 };
 
-export default [esm, cjs, cli];
+// GLB CLI build
+const glbCli = {
+    input: 'src/glb/index.ts',
+    output: {
+        dir: 'dist',
+        format: 'esm',
+        sourcemap: true,
+        entryFileNames: 'glb.mjs'
+    },
+    external: ['webgpu'],
+    plugins: [
+        versionReplace(),
+        typescript({
+            tsconfig: './tsconfig.json',
+            declaration: false,
+            declarationDir: undefined
+        }),
+        resolve(),
+        json()
+    ],
+    cache: false
+};
+
+export default [esm, cjs, cli, glbCli];
