@@ -30,8 +30,7 @@
     "./lib/*": "./lib/*"
   },
   "bin": {
-    "splat-transform": "bin/cli.mjs",
-    "splat-transform-glb": "bin/glb.mjs"
+    "splat-transform": "bin/cli.mjs"
   },
   "bugs": {
     "url": "https://github.com/playcanvas/splat-transform/issues"

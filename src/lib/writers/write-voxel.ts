@@ -522,4 +522,4 @@ const writeVoxel = async (options: WriteVoxelOptions, fs: FileSystem): Promise<v
     }
 };
 
-export { writeVoxel, writeOctreeFiles, cropToOccupied, cropToNavigable, type WriteVoxelOptions, type VoxelMetadata };
+export { writeVoxel, writeOctreeFiles, type WriteVoxelOptions, type VoxelMetadata };
